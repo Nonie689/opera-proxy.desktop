@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+## Install to /usr/bin !!!
+
+while true
+do
+  for api_addr in $(nslookup api.sec-tunnel.com | grep Address| tail  --lines +2 | awk '{print $2}')
+  do
+     opera-proxy -api-address $api_addr -country AS -refresh 2h0m0s -refresh-retry 24s -timeout 24s -verbosity 10
+  done
+done
