@@ -12,11 +12,25 @@ all:
 	\cp  opera-vpn-network-proxy  $(DESTDIR)$(PREFIX)
 	\cp  opera-vpn-network-proxy.desktop  /usr/share/applications/
 	\chmod +x $(DESTDIR)$(PREFIX)/opera-vpn-network-proxy
+	\echo "Open in Firerfox/Librewolf: https://addons.mozilla.org/firefox/downloads/file/3616824/foxyproxy_standard-7.5.1.xpi"
+	\echo
+	\echo "And import option file!!"
+	\echo
+	\echo "Flagfox-options-Opera-Proxy.json"
+	\echo
+	\echo "librewolf https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/"
 
 install:
 	\cp  opera-vpn-network-proxy  $(DESTDIR)$(PREFIX)
 	\cp  opera-vpn-network-proxy.desktop  /usr/share/applications/
 	\chmod +x $(DESTDIR)$(PREFIX)/opera-vpn-network-proxy
+	\echo "Open in Firerfox/Librewolf: https://addons.mozilla.org/firefox/downloads/file/3616824/foxyproxy_standard-7.5.1.xpi"
+	\echo 
+	\echo "And import option file!!"
+	\echo
+	\echo "Flagfox-options-Opera-Proxy.json"
+	\echo
+	\echo "librewolf https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/"
 
 uninstall:
 	\rm $(DESTDIR)$(PREFIX)/opera-vpn-network-proxy

@@ -1,0 +1,97 @@
+{
+  "logging": {
+    "size": 100,
+    "active": false
+  },
+  "mmd9er1665678736158": {
+    "type": 1,
+    "color": "#66cc66",
+    "title": "Oper-Proxy-VPN_ASIAN",
+    "active": true,
+    "address": "127.0.0.1",
+    "port": 18080,
+    "proxyDNS": false,
+    "username": "",
+    "password": "",
+    "whitePatterns": [
+      {
+        "title": "all URLs",
+        "pattern": "*.eclipso.ch",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "all URLs",
+        "pattern": "*.eclipso.de",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "all URLs",
+        "pattern": "*.eclipso.eu",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "all URLs",
+        "pattern": "*.youtube.com",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "all URLs",
+        "pattern": "*.google.com",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "all URLs",
+        "pattern": "*.google.de",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "all URLs",
+        "pattern": "*",
+        "type": 1,
+        "protocols": 1,
+        "active": false
+      }
+    ],
+    "blackPatterns": [
+      {
+        "title": "local hostnames (usually no dots in the name). Pattern exists because 'Do not use this proxy for localhost and intranet/private IP addresses' is checked.",
+        "pattern": "^(?:[^:@/]+(?::[^@/]+)?@)?(?:localhost|127\\.\\d+\\.\\d+\\.\\d+)(?::\\d+)?(?:/.*)?$",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "local subnets (IANA reserved address space). Pattern exists because 'Do not use this proxy for localhost and intranet/private IP addresses' is checked.",
+        "pattern": "^(?:[^:@/]+(?::[^@/]+)?@)?(?:192\\.168\\.\\d+\\.\\d+|10\\.\\d+\\.\\d+\\.\\d+|172\\.(?:1[6789]|2[0-9]|3[01])\\.\\d+\\.\\d+)(?::\\d+)?(?:/.*)?$",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "localhost - matches the local host optionally prefixed by a user:password authentication string and optionally suffixed by a port number. The entire local subnet (127.0.0.0/8) matches. Pattern exists because 'Do not use this proxy for localhost and intranet/private IP addresses' is checked.",
+        "pattern": "^(?:[^:@/]+(?::[^@/]+)?@)?[\\w-]+(?::\\d+)?(?:/.*)?$",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      }
+    ],
+    "pacURL": "",
+    "index": 9007199254740990
+  },
+  "mode": "patterns",
+  "browserVersion": "105.0.3",
+  "foxyProxyVersion": "7.5.1",
+  "foxyProxyEdition": "standard"
+}
